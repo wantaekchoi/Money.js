@@ -1,7 +1,7 @@
 # Money.js
 
 ```javascript
-const { BigNumber, CurrencyInfo, Money } = require('don.js');
+const { CurrencyInfo, Money } = require('don.js');
 
 // Create a currency info object for USD in English (United States)
 const currencyInfo = new CurrencyInfo('USD', 'en-US');
