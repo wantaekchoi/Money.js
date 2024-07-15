@@ -1,5 +1,5 @@
 {
-  "name": "don.js",
+  "name": "@wantaek/Money.js",
   "version": "1.0.0",
   "description": "A simple JavaScript/TypeScript library for money calculations",
   "main": "dist/don.cjs.js",
