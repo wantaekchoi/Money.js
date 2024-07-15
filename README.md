@@ -1,4 +1,4 @@
-# don.js
+# Money.js
 
 ```javascript
 const { BigNumber, CurrencyInfo, Money } = require('don.js');
