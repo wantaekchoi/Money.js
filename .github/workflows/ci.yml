@@ -37,9 +37,10 @@ jobs:
         run: npm run doc
 
       - name: Deploy to GitHub Pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-        run: npm run deploy-docs
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          publish_dir: ./docs
 
       - name: Semantic Release
         env:
