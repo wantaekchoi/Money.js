@@ -7,8 +7,6 @@ on:
   pull_request:
     branches:
       - main
-  release:
-    types: [published]
 
 jobs:
   build:
@@ -44,12 +42,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs
-
-      - name: Publish to npm
-        if: github.event_name == 'release' && github.event.action == 'published'
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npm publish --access public
 
       - name: Semantic Release
         env:
