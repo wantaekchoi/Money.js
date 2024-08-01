@@ -1,12 +1,13 @@
 {
-  "name": "@wantaek/Money.js",
+  "name": "@wantaek/money-js",
   "version": "1.0.0",
   "description": "A simple JavaScript/TypeScript library for money calculations",
   "main": "dist/don.cjs.js",
   "module": "dist/don.esm.js",
   "types": "dist/index.d.ts",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   },
   "scripts": {
     "build": "rollup -c",
