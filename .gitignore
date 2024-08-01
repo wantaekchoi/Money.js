@@ -22,6 +22,9 @@ yarn-error.log*
 *.njsproj
 *.sln
 
+# Generated documentation
+docs/
+
 # Coverage reports
 coverage/
 
