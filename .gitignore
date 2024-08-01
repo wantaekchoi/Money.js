@@ -27,7 +27,3 @@ docs/
 
 # Coverage reports
 coverage/
-
-# Dependency lock files
-package-lock.json
-yarn.lock
