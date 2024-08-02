@@ -1,7 +1,7 @@
-# Money.js
+# @wantaek/money-js
 
 ```javascript
-const { CurrencyInfo, Money } = require('don.js');
+import { CurrencyInfo, Money } from '@wantaek/money-js';
 
 // Create a currency info object for USD in English (United States)
 const currencyInfo = new CurrencyInfo('USD', 'en-US');
@@ -23,4 +23,3 @@ console.log(sum.toFormat()); // Output: $150.75
 // Multiply Money object by a factor
 const multiplied = money.multiply(2);
 console.log(multiplied.toFormat()); // Output: $201.00
-```
